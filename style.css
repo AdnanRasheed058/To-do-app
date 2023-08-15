@@ -1,0 +1,40 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.main{
+    background-color: rgb(174, 159, 188);
+    width: 100%;
+    height: 100vh;
+}
+.inner{
+    background-color:rgb(83, 136, 136);
+}
+.todo-input{
+    height: 3rem !important;
+    border: none;
+    font-size: larger;
+}
+.add-todo-btn{
+    width: 4rem;
+    height: 3rem;
+    background-color: blue;
+    color: white;
+    border:none;
+}
+.deleteall-btn{
+    width: 4rem;
+    height: 3rem;
+    background-color: brown;
+    color: white;
+    width: 5rem;
+    border:none;
+
+}
+.todo-edit-btn{
+    margin-left: 5rem !important;
+}
+.todo-delete-btn{
+    
+}
