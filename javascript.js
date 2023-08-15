@@ -8,7 +8,9 @@ let getFormData = () => {
     let dataObj = {
         title: todoData
     }
+    todoData.value = "";
     return dataObj;
+     
  
 }
 
@@ -22,6 +24,8 @@ let saveDataInLocalStorage = (item) => {
     let data = getDataInLocalStorage();
     data.push(item);
     localStorage.setItem("notes", JSON.stringify(data));
+    let addTodo = document.querySelector(".add-todo")
+    addTodo.value = ""
 
 }
 let showData = () => {
@@ -40,7 +44,8 @@ let showData = () => {
                         </td>
                     </tr>`;
                     
-                    holder.innerHTML += html;        
+                    holder.innerHTML += html;    
+
 
 
         }
@@ -60,7 +65,7 @@ addTodoBtn.addEventListener("click", () => {
     let formdata = getFormData();
     saveDataInLocalStorage(formdata);
     showData();
-    // addTodo.value = "";
+    
 })
 
 let deleteAllBtn = document.querySelector(".deleteall-btn")
